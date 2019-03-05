@@ -8,10 +8,21 @@
 <!-- minified component js -->
 <script src="build/pdb.litemol.min.js"></script>
   
+  <script>
+(function () {
+  'use strict';
+  angular.element(document).ready(function () {
+      angular.bootstrap(document, ['pdb.litemol']);
+  });
+}());
+</script> 
 </head>
 <body>
 
 <h1>Hello!</h1>
+  
+  <!-- component as custom element -->
+<pdb-lite-mol pdb-id="'1cbs'"></pdb-lite-mol>
 
 <a href = "https://kinetickaan.github.io/RIPK1/description.html">link</a>
 

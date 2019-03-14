@@ -1,20 +1,20 @@
 <head>
-  <!-- minified component css -->
-<link rel="stylesheet" type="text/css" href="pdb-lite-mol-master/build/pdb.litemol.min.css">
- 
-<!-- Dependencey scripts -->
-<script src="pdb-lite-mol-master/bower_components/angular/angular.min.js"></script>
- 
-<!-- minified component js -->
-<script src="pdb-lite-mol-master/build/pdb.litemol.min.js"></script>
-  
-angular.module('myModule', ['pdb.component.library']);
+ <!-- Complied & minified library css -->
+<link rel="stylesheet" href="//www.ebi.ac.uk/pdbe/pdb-component-library/v1.0/css/pdb.component.library.min-1.0.0.css" />
+
+<!-- Dependencey scripts (these can be skipped if already included in page) -->
+<script src="//www.ebi.ac.uk/pdbe/pdb-component-library/libs/d3.min.js"></script>
+<script src="//www.ebi.ac.uk/pdbe/pdb-component-library/libs/angular.1.4.7.min.js"></script>
+
+<!-- Complied & minified library JS -->
+<script src="//www.ebi.ac.uk/pdbe/pdb-component-library/v1.0/js/pdb.component.library.min-1.0.0.js"></script>
+
 
 </head>
 <body>
 
-<h1>Hello!</h1>
-
+<h1>Home page</h1>
+angular.module('myModule', ['pdb.component.library']);
 <pdb-lite-mol pdb-id="'1cbs'"></pdb-lite-mol>
 
 <a href = "https://kinetickaan.github.io/RIPK1/description.html">link</a>
